@@ -1,0 +1,216 @@
+/* Modern Gundam GCG Inspired Theme */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f7fa; /* very light cool gray */
+  color: #222f3e; /* dark slate blue for text */
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+header {
+  background: #0d1b2a; /* deep navy-blue */
+  padding: 1.2rem 1rem;
+  text-align: center;
+  border-bottom: 4px solid #00bcd4; /* bright cyan accent */
+  user-select: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+header h1 {
+  color: #00bcd4; /* cyan accent */
+  margin: 0;
+  font-weight: 700;
+  font-size: 2.2rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 0 0 8px rgba(0, 188, 212, 0.7);
+}
+
+.nav-tabs {
+  border-bottom: 2px solid #00bcd4;
+  margin-bottom: 2rem;
+}
+
+.nav-tabs .nav-link {
+  color: #0d1b2a;
+  font-weight: 600;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.05rem;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  border-radius: 6px 6px 0 0;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: #00bcd4;
+  color: white !important;
+  border-bottom: 3px solid #008ba3;
+  box-shadow: 0 4px 10px rgba(0, 188, 212, 0.4);
+}
+
+.nav-tabs .nav-link:hover:not(.active) {
+  color: #008ba3;
+  background-color: #e0f7fa;
+}
+
+.deck-list, .card-list {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  color: #222f3e;
+  user-select: none;
+}
+
+.deck-entry, .booster-set, .card-entry {
+  background: #e8f6f9;
+  border-radius: 10px;
+  padding: 0.8rem 1.2rem;
+  margin-bottom: 0.8rem;
+  cursor: pointer;
+  color: #0d1b2a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  border: 1.5px solid #00bcd4;
+}
+
+.deck-entry:hover, .booster-set:hover, .card-entry:hover {
+  background-color: #00acc1;
+  color: white;
+  border-color: #008ba3;
+  box-shadow: 0 4px 12px rgba(0, 140, 163, 0.6);
+}
+
+.booster-cards {
+  margin-top: 0.6rem;
+  padding-left: 1.2rem;
+}
+
+#cardPreviewFull {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(13, 27, 42, 0.95);
+  padding: 2rem 2rem 3rem 2rem;
+  box-sizing: border-box;
+  z-index: 1050;
+  overflow-y: auto;
+  color: #00bcd4;
+  text-align: center;
+  user-select: none;
+  border-radius: 0 0 16px 16px;
+}
+
+#cardPreviewFull img {
+  max-width: 90vw;
+  max-height: 45vh;
+  object-fit: contain;
+  margin-bottom: 1.2rem;
+  border-radius: 14px;
+  box-shadow: 0 0 20px #00bcd4;
+}
+
+#cardPreviewFull h3 {
+  font-weight: 700;
+  font-size: 2.4rem;
+  margin-bottom: 0.6rem;
+  color: #00bcd4;
+  text-shadow: 0 0 12px rgba(0, 188, 212, 0.9);
+  word-break: break-word;
+}
+
+#cardPreviewFull .translation {
+  color: #4db6ac; /* tealish green for effect */
+  font-size: 1.3rem;
+  margin-bottom: 0.7rem;
+  word-break: break-word;
+}
+
+#cardPreviewFull .set-effect {
+  color: #80deea; /* light cyan */
+  font-size: 1.15rem;
+  margin-bottom: 1rem;
+  word-break: break-word;
+}
+
+.close-btn {
+  background: #00bcd4; /* bright cyan */
+  border: none;
+  color: #0d1b2a; /* dark navy */
+  padding: 0.5rem 1.2rem;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 700;
+  box-shadow: 0 0 10px #00bcd4;
+  transition: background-color 0.3s ease;
+  user-select: none;
+}
+
+.close-btn:hover {
+  background: #008ba3;
+  color: white;
+}
+
+.btn-remove-card, .btn-delete-deck {
+  background: #00bcd4;
+  border: none;
+  color: #0d1b2a;
+  padding: 0.3rem 0.8rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-remove-card:hover, .btn-delete-deck:hover {
+  background: #008ba3;
+  color: white;
+}
+
+input[type="text"], select {
+  border-radius: 12px;
+  border: 2px solid #00bcd4;
+  background: white;
+  color: #222f3e;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  transition: border-color 0.3s ease;
+  width: auto;
+  min-width: 180px;
+}
+
+input[type="text"]:focus, select:focus {
+  border-color: #008ba3;
+  outline: none;
+  background: #e0f7fa;
+}
+
+.deck-entry span, .card-entry span {
+  word-break: break-word;
+}
+
+@media (max-width: 575.98px) {
+  .d-flex.align-items-center.gap-2.flex-wrap {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+  input[type="text"], select, .btn {
+    width: 100% !important;
+  }
+  .btn {
+    margin-top: 0.5rem;
+  }
+}
+
+.d-flex.flex-nowrap {
+  flex-wrap: nowrap !important;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}

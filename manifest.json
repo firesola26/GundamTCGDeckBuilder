@@ -1,0 +1,20 @@
+{
+  "name": "Gundam Deck Builder",
+  "short_name": "Gundam Deck",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0033A0",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "Image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "Img/png"
+    }
+  ]
+}
